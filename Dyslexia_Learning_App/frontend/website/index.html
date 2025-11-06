@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HootLearn - Dyslexia Learning</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="nav-bar">
+    <img src="owl.png" alt="Owl Mascot" class="nav-owl">
+    <h1 class="logo">HootLearn 🦉</h1>
+    <nav>
+        <button id="nav-home">🏠 Home</button>
+        <button id="nav-read">📖 Learn to Read</button>
+        <button id="nav-speak">🗣️ Speak & Repeat</button>
+        <button id="nav-write">✏️ Writing Practice</button>
+        <button id="nav-about">💡 About</button>
+    </nav>
+</header>
+
+<!-- Home Page -->
+<section class="home-container page">
+    <div class="card">
+        <h2>Welcome to HootLearn 🦉</h2>
+        <p>Learn words, sounds, and writing — all in one fun, interactive space!</p>
+        <button id="start-btn" class="main-btn">Start Learning 🎉</button>
+    </div>
+    <footer>🌈 A creative way to help children with dyslexia learn confidently.</footer>
+</section>
+
+<!-- Learn to Read -->
+<section class="learn-container page hidden">
+    <div class="card">
+        <h2>Learn to Read 📖</h2>
+        <p>Click below to get a new word and explore its sound and meaning!</p>
+        <button id="get-word-btn" class="main-btn">🎯 Get Word</button>
+        <div id="word-display" class="word-box"></div>
+        <div class="action-buttons">
+            <button id="listen-btn" class="btn-secondary">🔊 Listen</button>
+            <button id="show-sounds-btn" class="btn-secondary">🅰️ Show Sounds</button>
+            <button id="show-meaning-btn" class="btn-secondary">📖 Show Meaning</button>
+        </div>
+        <div id="phonemes-container" class="phoneme-box"></div>
+        <div id="meaning-display" class="meaning-box"></div>
+    </div>
+    <footer>🧠 Learn new words with sound and meaning for better memory!</footer>
+</section>
+
+<!-- Speak & Repeat -->
+<section class="speak-container page hidden">
+    <div class="card">
+        <h2>Speak & Repeat 🗣️</h2>
+        <p>Try saying the word shown on screen. We'll tell you if you got it right!</p>
+        <button id="get-speak-word-btn" class="main-btn">🎯 Get Word</button>
+        <div id="speak-word-display" class="word-box"></div>
+        <button id="start-speak-btn" class="btn-secondary">🎤 Start Speaking</button>
+        <div id="speak-result" class="speak-box"></div>
+    </div>
+    <footer>💬 Practice pronunciation and improve speaking confidence!</footer>
+</section>
+
+<!-- Writing Practice -->
+<section class="write-container page hidden">
+    <div class="card">
+        <h2>Writing Practice ✏️</h2>
+        <p>Write the word you see on the canvas. Clear and retry anytime!</p>
+        <canvas id="write-canvas" width="600" height="200"></canvas>
+        <button id="clear-canvas" class="btn-secondary">🧽 Clear Canvas</button>
+    </div>
+    <footer>✍️ Practicing writing helps remember word shapes better!</footer>
+</section>
+
+<!-- About Dyslexia -->
+<section class="about-container page hidden">
+    <div class="card">
+        <h2>About Dyslexia 💡</h2>
+        <p>
+            Dyslexia is a learning difference that affects reading, writing, and spelling.  
+            HootLearn uses visual, auditory, and writing-based learning for better understanding.
+        </p>
+        <ul>
+            <li>🌟 Use multisensory methods</li>
+            <li>💖 Be patient and encouraging</li>
+            <li>📚 Practice in short, fun sessions</li>
+            <li>🎉 Celebrate small achievements</li>
+        </ul>
+    </div>
+    <footer>💡 Every learner is unique — let's make learning joyful!</footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
